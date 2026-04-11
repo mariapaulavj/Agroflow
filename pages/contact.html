@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — AgroFlow Intelligence</title>
+  <meta name="description" content="Get in touch with the AgroFlow team. Whether you have questions, want a demo, or need a custom plan — we'd love to hear from you." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <div class="nav-logo-icon">🌱</div>
+        <span class="nav-logo-text">Agro<span>Flow</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="pricing.html" class="btn btn-outline btn-sm">See Pricing</a>
+        <a href="pricing.html" class="btn btn-primary btn-sm">Start Free Trial</a>
+        <button class="nav-menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-label">Get in Touch</div>
+      <h1>We'd love to hear<br/>from you</h1>
+      <p>Whether you're a farmer curious about smart irrigation, a researcher, an investor, or a potential partner — our team is ready to connect.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- LEFT: Info -->
+        <div>
+          <h3>Let's talk about your farm</h3>
+          <p style="margin-bottom:32px;">Fill out the form and one of our team members will get back to you within 24 hours. Or reach us directly using the details below.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📧</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:agroF@gmail.com" style="color:var(--green-700); font-weight:500;">agroF@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+34683708065" style="color:var(--green-700); font-weight:500;">+34 683 708 065</a></p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🌐</div>
+            <div>
+              <h4>Website</h4>
+              <p style="color:var(--text-muted);">www.agroflowintelligence.com</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🏫</div>
+            <div>
+              <h4>Institution</h4>
+              <p style="color:var(--text-muted);">IE University, Bachelor in Digital Business & Technology</p>
+            </div>
+          </div>
+
+          <!-- Response times -->
+          <div style="background:var(--green-50); border:1px solid var(--border); border-radius:var(--radius-lg); padding:24px; margin-top:16px;">
+            <h4 style="margin-bottom:16px; font-size:0.9rem;">Typical response times</h4>
+            <div style="display:flex; flex-direction:column; gap:10px;">
+              <div style="display:flex; justify-content:space-between; font-size:0.85rem;">
+                <span style="color:var(--text-muted);">General enquiries</span>
+                <span style="color:var(--green-700); font-weight:600;">Within 24h</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-size:0.85rem;">
+                <span style="color:var(--text-muted);">Demo requests</span>
+                <span style="color:var(--green-700); font-weight:600;">Within 48h</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-size:0.85rem;">
+                <span style="color:var(--text-muted);">Enterprise / partnerships</span>
+                <span style="color:var(--green-700); font-weight:600;">Same business day</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Form -->
+        <div>
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first_name" placeholder="Manuela" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last_name" placeholder="García" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+34 600 000 000" />
+            </div>
+
+            <div class="form-group">
+              <label for="inquiry-type">What can we help you with? *</label>
+              <select id="inquiry-type" name="inquiry_type" required>
+                <option value="" disabled selected>Select a topic...</option>
+                <option value="trial">Start a free trial</option>
+                <option value="demo">Request a product demo</option>
+                <option value="pricing">Pricing & plans</option>
+                <option value="enterprise">Enterprise / custom solution</option>
+                <option value="partnership">Partnership or research collaboration</option>
+                <option value="press">Press & media</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="farm-size">Farm size (hectares)</label>
+              <input type="text" id="farm-size" name="farm_size" placeholder="e.g. 50 ha, smallholder, commercial, etc." />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" placeholder="Tell us about your farm, your current irrigation challenges, and what you're hoping AgroFlow can help you achieve..." required></textarea>
+              <p class="form-note">The more context you give us, the better we can tailor our response.</p>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg w-full" style="justify-content:center; margin-top:8px;">
+              Send Message →
+            </button>
+
+            <p style="text-align:center; font-size:0.78rem; color:var(--text-light); margin-top:14px;">
+              By sending this form you agree to our <a href="#" style="color:var(--green-600); text-decoration:underline;">Privacy Policy</a>. We never share your data.
+            </p>
+          </form>
+
+          <!-- Success state -->
+          <div id="form-success" class="form-success">
+            <div class="success-icon">🌱</div>
+            <h3 style="margin-bottom:12px; color:var(--green-800);">Message received!</h3>
+            <p style="color:var(--green-700);">Thank you for getting in touch. One of our team members will respond within 24 hours. In the meantime, why not explore our <a href="features.html" style="color:var(--green-700); font-weight:600; text-decoration:underline;">features</a> or <a href="pricing.html" style="color:var(--green-700); font-weight:600; text-decoration:underline;">pricing</a>?</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US (mini) -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-48">
+        <div class="section-label">Why AgroFlow</div>
+        <h2 class="section-title">What you get when you work with us</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card fade-up" style="text-align:center;">
+          <div style="font-size:2.5rem; margin-bottom:16px;">⚡</div>
+          <h4>Fast onboarding</h4>
+          <p>Set up in under 5 minutes. No hardware to install, no integration headaches — just connect and start receiving recommendations.</p>
+        </div>
+        <div class="card fade-up delay-1" style="text-align:center;">
+          <div style="font-size:2.5rem; margin-bottom:16px;">🧠</div>
+          <h4>Expert support</h4>
+          <p>Our team combines agronomy expertise with data science — we don't just support the software, we understand your crops.</p>
+        </div>
+        <div class="card fade-up delay-2" style="text-align:center;">
+          <div style="font-size:2.5rem; margin-bottom:16px;">🌍</div>
+          <h4>Mission-driven</h4>
+          <p>We're building AgroFlow because water scarcity is a crisis that matters. We're as invested in your farm's success as you are.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to grow smarter?</h2>
+      <p class="lead">Start your free 14-day trial today — no hardware, no credit card, no risk.</p>
+      <div class="cta-actions">
+        <a href="pricing.html" class="btn btn-primary btn-lg">View Plans & Start Free</a>
+      </div>
+      <p class="cta-note">Or email us directly at <a href="mailto:agroF@gmail.com" style="color:rgba(255,255,255,0.6); text-decoration:underline;">agroF@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-logo">
+            <div class="footer-brand-icon">🌱</div>
+            <span class="footer-brand-name">Agro<span>Flow</span> Intelligence</span>
+          </div>
+          <p>AI-powered precision irrigation that helps farmers optimize water usage, improve crop productivity, and reduce operational costs.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Product</h5>
+          <ul>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="features.html#ecosystem">IoT Ecosystem</a></li>
+            <li><a href="features.html#ai">AI Engine</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Team</a></li>
+            <li><a href="about.html#mission">Mission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:agroF@gmail.com">agroF@gmail.com</a></li>
+            <li><a href="tel:+34683708065">+34 683 708 065</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AgroFlow Intelligence. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features — AgroFlow Intelligence</title>
+  <meta name="description" content="Explore AgroFlow's AI engine, IoT ecosystem, satellite integration, and mobile experience for precision smart irrigation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <div class="nav-logo-icon">🌱</div>
+        <span class="nav-logo-text">Agro<span>Flow</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="features.html" class="active">Features</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-outline btn-sm">Get in Touch</a>
+        <a href="pricing.html" class="btn btn-primary btn-sm">Start Free Trial</a>
+        <button class="nav-menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-label">Platform Features</div>
+      <h1>Intelligence that knows<br/>your fields better than anyone</h1>
+      <p>AgroFlow's full-stack approach combines cutting-edge AI with accessible software to deliver precision irrigation for every type of farm.</p>
+    </div>
+  </section>
+
+  <!-- CORE DATA INPUTS -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label">Data Sources</div>
+        <h2 class="section-title">Four streams, one intelligent system</h2>
+        <p class="section-subtitle">AgroFlow fuses four distinct real-time data sources into a single, coherent model of your field's water needs.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns: repeat(2,1fr); gap:24px; margin-top:60px;">
+        <div class="feature-detail-card fade-up">
+          <div class="feature-detail-icon bg-blue-light">🪱</div>
+          <h3>Soil Moisture Sensors</h3>
+          <p>Ground-level IoT probes measure volumetric water content at multiple soil depths, giving a precise picture of root-zone moisture. Compatible with most commercial sensor brands via our open API.</p>
+          <div class="feature-tags">
+            <span class="feature-tag">Capacitive sensors</span>
+            <span class="feature-tag">Multi-depth probes</span>
+            <span class="feature-tag">API integration</span>
+            <span class="feature-tag">Real-time streaming</span>
+          </div>
+        </div>
+        <div class="feature-detail-card fade-up delay-1">
+          <div class="feature-detail-icon bg-green-light">🌤️</div>
+          <h3>Weather Forecast Data</h3>
+          <p>7-day hyper-local weather forecasts — including precipitation probability, temperature, humidity, and wind — are integrated to prevent unnecessary irrigation ahead of rainfall events.</p>
+          <div class="feature-tags">
+            <span class="feature-tag">7-day forecasts</span>
+            <span class="feature-tag">Hyper-local resolution</span>
+            <span class="feature-tag">Rain prediction</span>
+            <span class="feature-tag">Evapotranspiration (ET₀)</span>
+          </div>
+        </div>
+        <div class="feature-detail-card fade-up delay-2">
+          <div class="feature-detail-icon" style="background:var(--amber-100);">🛰️</div>
+          <h3>Satellite Imagery</h3>
+          <p>Multispectral satellite imagery (NDVI, NDWI) maps vegetation health and water stress across your entire field at 10m resolution — detecting dry patches invisible from the ground.</p>
+          <div class="feature-tags">
+            <span class="feature-tag">NDVI analysis</span>
+            <span class="feature-tag">10m resolution</span>
+            <span class="feature-tag">Sentinel-2 data</span>
+            <span class="feature-tag">Canopy stress mapping</span>
+          </div>
+        </div>
+        <div class="feature-detail-card fade-up delay-3">
+          <div class="feature-detail-icon bg-green-light">🌾</div>
+          <h3>Crop Type Intelligence</h3>
+          <p>Each crop species has unique water requirements at each growth stage. AgroFlow's crop model library covers 120+ crop varieties, calibrating recommendations to the plant's actual biological needs.</p>
+          <div class="feature-tags">
+            <span class="feature-tag">120+ crop varieties</span>
+            <span class="feature-tag">Growth stage modelling</span>
+            <span class="feature-tag">Root-depth estimation</span>
+            <span class="feature-tag">Stress threshold alerts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI ENGINE -->
+  <section class="section section-alt" id="ai">
+    <div class="container">
+      <div class="grid-2">
+        <div class="fade-up">
+          <div class="section-label">The AI Engine</div>
+          <h2 class="section-title">Machine learning that learns your land</h2>
+          <p>At the core of AgroFlow sits an adaptive AI model trained on millions of field-season data points. It doesn't just follow rules — it learns the unique microclimate and soil behaviour of each individual field over time.</p>
+          <br/>
+          <p>The model continuously updates its predictions as new sensor readings arrive, improving accuracy season after season the more it operates on your farm.</p>
+          <br/>
+          <a href="pricing.html" class="btn btn-primary" style="margin-top:8px;">Get started →</a>
+        </div>
+        <div class="fade-up delay-1">
+          <div class="tech-stack-grid">
+            <div class="tech-item">
+              <span class="tech-icon">📊</span>
+              <div>
+                <h4>Big Data Processing</h4>
+                <p>Processes millions of sensor data points per day across all connected farms using distributed cloud computing.</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">🧠</span>
+              <div>
+                <h4>Adaptive ML Models</h4>
+                <p>Field-specific models that adapt over multiple seasons, learning local soil behaviour and microclimates.</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">⏱️</span>
+              <div>
+                <h4>Real-Time Inference</h4>
+                <p>Recommendations update within seconds of new sensor data arriving — always reflecting the latest field conditions.</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">🔍</span>
+              <div>
+                <h4>Explainable AI</h4>
+                <p>Every recommendation includes a plain-language explanation of why AgroFlow suggests that irrigation schedule.</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">🌦️</span>
+              <div>
+                <h4>Weather Model Fusion</h4>
+                <p>Blends ECMWF, GFS and local station data for the most accurate precipitation and evapotranspiration forecasts.</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">🔒</span>
+              <div>
+                <h4>Secure & Private</h4>
+                <p>All farm data is encrypted end-to-end. Your field data is never shared with third parties without explicit consent.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IOT ECOSYSTEM -->
+  <section class="section" id="ecosystem">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label">IoT Ecosystem</div>
+        <h2 class="section-title">Five layers, seamlessly connected</h2>
+        <p class="section-subtitle">AgroFlow's architecture was designed from the ground up to be modular, reliable, and scalable — from a single field to thousands of hectares.</p>
+      </div>
+
+      <div class="ecosystem-layers" style="margin-top:56px;">
+        <div class="ecosystem-layer fade-up">
+          <div class="layer-badge">
+            <div class="layer-icon" style="background:#e0f4fd;">🌡️</div>
+            <div>
+              <div class="layer-name">Layer 1 — Devices</div>
+            </div>
+          </div>
+          <div class="layer-items">
+            <span class="layer-tag">🪱 Soil moisture sensors</span>
+            <span class="layer-tag">🌤️ Weather data sources</span>
+            <span class="layer-tag">🛰️ Satellite imagery</span>
+            <span class="layer-tag">🌡️ Temperature probes</span>
+          </div>
+        </div>
+
+        <div class="ecosystem-layer fade-up delay-1">
+          <div class="layer-badge">
+            <div class="layer-icon" style="background:#e8f5ee;">📡</div>
+            <div>
+              <div class="layer-name">Layer 2 — Connectivity</div>
+            </div>
+          </div>
+          <div class="layer-items">
+            <span class="layer-tag">🔒 Encrypted internet</span>
+            <span class="layer-tag">☁️ Cloud upload</span>
+            <span class="layer-tag">📶 4G / LoRaWAN</span>
+            <span class="layer-tag">🔄 Real-time streaming</span>
+          </div>
+        </div>
+
+        <div class="ecosystem-layer fade-up delay-2">
+          <div class="layer-badge">
+            <div class="layer-icon" style="background:var(--amber-100);">🤖</div>
+            <div>
+              <div class="layer-name">Layer 3 — Data & AI</div>
+            </div>
+          </div>
+          <div class="layer-items">
+            <span class="layer-tag">📊 Big data pipeline</span>
+            <span class="layer-tag">🧠 ML irrigation model</span>
+            <span class="layer-tag">🌦️ Weather fusion</span>
+            <span class="layer-tag">🛰️ Satellite processing</span>
+          </div>
+        </div>
+
+        <div class="ecosystem-layer fade-up delay-3">
+          <div class="layer-badge">
+            <div class="layer-icon" style="background:#e8f5ee;">📱</div>
+            <div>
+              <div class="layer-name">Layer 4 — Application</div>
+            </div>
+          </div>
+          <div class="layer-items">
+            <span class="layer-tag">📱 Farmer mobile app</span>
+            <span class="layer-tag">📈 Web dashboard</span>
+            <span class="layer-tag">🔔 Push notifications</span>
+            <span class="layer-tag">📤 Export reports</span>
+          </div>
+        </div>
+
+        <div class="ecosystem-layer fade-up" style="transition-delay:0.4s;">
+          <div class="layer-badge">
+            <div class="layer-icon" style="background:#e0f4fd;">👨‍🌾</div>
+            <div>
+              <div class="layer-name">Layer 5 — Users</div>
+            </div>
+          </div>
+          <div class="layer-items">
+            <span class="layer-tag">👨‍🌾 Smallholder farmers</span>
+            <span class="layer-tag">🏢 Large agribusinesses</span>
+            <span class="layer-tag">🌿 Agricultural advisors</span>
+            <span class="layer-tag">🏛️ Government bodies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOBILE APP -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <div style="background: linear-gradient(160deg, var(--green-900), var(--green-800)); border-radius: var(--radius-xl); padding: 40px; min-height: 420px; display:flex; flex-direction:column; gap:16px;">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+              <span style="font-family:'Syne',sans-serif; font-weight:700; color:white; font-size:0.9rem;">🌱 AgroFlow</span>
+              <span style="font-size:0.7rem; color:var(--green-400); background:rgba(82,168,118,0.15); padding:4px 10px; border-radius:var(--radius-full); font-weight:600;">✓ Connected</span>
+            </div>
+
+            <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:18px;">
+              <div style="font-size:0.68rem; text-transform:uppercase; letter-spacing:0.08em; color:rgba(255,255,255,0.38); margin-bottom:10px;">Today's Overview</div>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+                <div style="text-align:center;">
+                  <div style="font-size:1.8rem; font-weight:800; color:var(--green-400); font-family:'Syne',sans-serif;">68%</div>
+                  <div style="font-size:0.75rem; color:rgba(255,255,255,0.5);">Avg Soil Moisture</div>
+                </div>
+                <div style="text-align:center;">
+                  <div style="font-size:1.8rem; font-weight:800; color:var(--blue-300); font-family:'Syne',sans-serif;">24°C</div>
+                  <div style="font-size:0.75rem; color:rgba(255,255,255,0.5);">Temperature</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="background:linear-gradient(135deg,rgba(82,168,118,0.2),rgba(33,150,196,0.12)); border:1px solid rgba(82,168,118,0.3); border-radius:14px; padding:18px;">
+              <div style="font-size:0.66rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--green-400); font-weight:700; margin-bottom:6px;">💧 Today's Recommendation</div>
+              <div style="font-size:0.88rem; color:white; line-height:1.5;">Skip irrigation today. Rain expected tomorrow (85% probability). Resume Thursday at 2.1 L/m².</div>
+            </div>
+
+            <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.07); border-radius:14px; padding:16px;">
+              <div style="font-size:0.68rem; text-transform:uppercase; letter-spacing:0.08em; color:rgba(255,255,255,0.38); margin-bottom:10px;">7-Day Forecast</div>
+              <div style="display:flex; justify-content:space-between;">
+                <div style="text-align:center;"><div style="font-size:14px;">☀️</div><div style="font-size:0.65rem; color:rgba(255,255,255,0.5);">Mon</div></div>
+                <div style="text-align:center;"><div style="font-size:14px;">⛅</div><div style="font-size:0.65rem; color:rgba(255,255,255,0.5);">Tue</div></div>
+                <div style="text-align:center;"><div style="font-size:14px;">🌧️</div><div style="font-size:0.65rem; color:var(--blue-300);">Wed</div></div>
+                <div style="text-align:center;"><div style="font-size:14px;">🌦️</div><div style="font-size:0.65rem; color:rgba(255,255,255,0.5);">Thu</div></div>
+                <div style="text-align:center;"><div style="font-size:14px;">☀️</div><div style="font-size:0.65rem; color:rgba(255,255,255,0.5);">Fri</div></div>
+                <div style="text-align:center;"><div style="font-size:14px;">☀️</div><div style="font-size:0.65rem; color:rgba(255,255,255,0.5);">Sat</div></div>
+                <div style="text-align:center;"><div style="font-size:14px;">⛅</div><div style="font-size:0.65rem; color:rgba(255,255,255,0.5);">Sun</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-up">
+          <div class="section-label">Mobile App</div>
+          <h2 class="section-title">Farm intelligence in your pocket</h2>
+          <p>Designed for farmers, not engineers. AgroFlow's mobile app delivers everything your team needs to manage irrigation across multiple fields — from a single screen.</p>
+          <br/>
+          <div style="display:flex; flex-direction:column; gap:16px; margin-top:8px;">
+            <div style="display:flex; gap:14px; align-items:flex-start;">
+              <div style="width:36px; height:36px; background:var(--green-100); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0;">📅</div>
+              <div>
+                <h4 style="font-size:0.95rem; margin-bottom:4px;">Irrigation scheduling</h4>
+                <p style="font-size:0.85rem; margin:0;">View and approve AI-generated irrigation plans for the week ahead with one tap.</p>
+              </div>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start;">
+              <div style="width:36px; height:36px; background:var(--blue-100); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0;">🗺️</div>
+              <div>
+                <h4 style="font-size:0.95rem; margin-bottom:4px;">Field maps & zones</h4>
+                <p style="font-size:0.85rem; margin:0;">Visualize moisture levels and health across all your fields on an interactive map.</p>
+              </div>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start;">
+              <div style="width:36px; height:36px; background:var(--amber-100); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0;">🔔</div>
+              <div>
+                <h4 style="font-size:0.95rem; margin-bottom:4px;">Smart alerts</h4>
+                <p style="font-size:0.85rem; margin:0;">Get notified of critical soil stress events, equipment issues, or unusual readings before damage occurs.</p>
+              </div>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start;">
+              <div style="width:36px; height:36px; background:var(--green-100); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0;">📊</div>
+              <div>
+                <h4 style="font-size:0.95rem; margin-bottom:4px;">Season analytics</h4>
+                <p style="font-size:0.85rem; margin:0;">Track water savings, yield trends, and cost reductions across multiple growing seasons.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>See AgroFlow in action</h2>
+      <p class="lead">Start your 14-day free trial. No hardware required. No credit card needed.</p>
+      <div class="cta-actions">
+        <a href="pricing.html" class="btn btn-primary btn-lg">Start Free Trial</a>
+        <a href="contact.html" class="btn btn-outline btn-lg">Request a Demo</a>
+      </div>
+      <p class="cta-note">Set up in under 5 minutes &nbsp;·&nbsp; Works with your existing sensors</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-logo">
+            <div class="footer-brand-icon">🌱</div>
+            <span class="footer-brand-name">Agro<span>Flow</span> Intelligence</span>
+          </div>
+          <p>AI-powered precision irrigation that helps farmers optimize water usage, improve crop productivity, and reduce operational costs.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Product</h5>
+          <ul>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="features.html#ecosystem">IoT Ecosystem</a></li>
+            <li><a href="features.html#ai">AI Engine</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Team</a></li>
+            <li><a href="about.html#mission">Mission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:agroF@gmail.com">agroF@gmail.com</a></li>
+            <li><a href="tel:+34683708065">+34 683 708 065</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AgroFlow Intelligence. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
