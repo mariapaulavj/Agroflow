@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
-    setInterval(() => goTo(current + 1), 4500);
+    setInterval(() => goTo(current + 1), 6700);
   });
 
   /* ─── SMOOTH SCROLL for anchor links ─── */

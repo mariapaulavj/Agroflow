@@ -293,12 +293,42 @@ p  { color: var(--text-muted); font-size: 1.0625rem; line-height: 1.75; }
 .problem-solution { display: grid; grid-template-columns: 1fr 1fr; }
 .problem-side { background: var(--green-900); padding: 80px 64px; }
 .solution-side { background: var(--green-800); padding: 80px 64px; }
+
+/* inline circle + list row inside each dark panel */
+.panel-inline {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-top: 24px;
+}
+.panel-inline--reverse { flex-direction: row-reverse; }
+.panel-inline .panel-circle {
+  width: 160px; height: 160px; border-radius: 50%;
+  overflow: hidden; flex-shrink: 0;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.07), 0 0 0 7px rgba(82,168,118,0.3), var(--shadow-lg);
+  transition: transform 0.5s ease;
+}
+.panel-inline .panel-circle img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: brightness(0.92) contrast(1.06) saturate(1.08);
+  transition: transform 0.7s ease; display: block;
+}
+.panel-inline .panel-circle:hover img { transform: scale(1.08); }
+
+/* AI ENGINE asymmetric grid */
+.ai-section-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 56px;
+  align-items: start;
+}
 .problem-side .section-label { background: rgba(255,255,255,0.09); color: rgba(255,255,255,0.65); }
 .problem-side .section-label::before { background: rgba(255,255,255,0.5); }
 .solution-side .section-label { background: rgba(82,168,118,0.18); color: var(--green-300); }
 .solution-side .section-label::before { background: var(--green-400); }
 .problem-side h2, .solution-side h2 { color: var(--white); margin-bottom: 16px; }
-.problem-side > p, .solution-side > p { color: rgba(255,255,255,0.55); margin-bottom: 32px; }
+.problem-side .panel-inline > div > p,
+.solution-side .panel-inline > div > p { color: rgba(255,255,255,0.55); margin-bottom: 20px; }
 .problem-list, .solution-list { display: flex; flex-direction: column; gap: 14px; }
 .problem-item, .solution-item {
   display: flex; align-items: flex-start; gap: 14px;
@@ -650,11 +680,13 @@ p  { color: var(--text-muted); font-size: 1.0625rem; line-height: 1.75; }
   background: var(--green-950);
 }
 .carousel-slide {
-  position: absolute; inset: 0;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
   width: 100%; height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 1.4s ease;
+  transition: opacity 0.8s ease-in-out;
+  will-change: opacity;
   filter: brightness(0.93) contrast(1.05) saturate(1.07);
 }
 .carousel-slide.active { opacity: 1; }

@@ -38,6 +38,8 @@
 
   .ecosystem-layer { grid-template-columns: 1fr; gap: 14px; }
   .layer-badge { flex-direction: row; }
+  .ai-section-grid { grid-template-columns: 1fr; }
+  .ai-section-grid .img-circle-frame--light { margin: 0 auto 32px; }
 
   .features-hero-detail { grid-template-columns: 1fr; }
   .tech-stack-grid { grid-template-columns: 1fr; }
@@ -112,6 +114,8 @@
 
   /* Problem / Solution */
   .problem-side, .solution-side { padding: 48px 24px; }
+  .panel-inline, .panel-inline--reverse { flex-direction: column; align-items: center; }
+  .panel-inline .panel-circle { width: 130px; height: 130px; }
 
   /* Ecosystem */
   .ecosystem-layer { padding: 18px 20px; }
