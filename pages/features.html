@@ -57,8 +57,18 @@
         <h2 class="section-title">Five streams, one intelligent system</h2>
         <p class="section-subtitle">AgroFlow fuses five distinct real-time data sources into a single, coherent model of your field's crop health and water needs.</p>
       </div>
-      <!-- Unsplash search: "satellite view farmland agriculture aerial" → ../images/features/satellite-imagery.webp -->
-      <img src="../images/features/satellite-imagery.webp" alt="Satellite view of agricultural fields" loading="lazy" class="section-img-banner" style="margin-top:48px;" />
+      <div class="photo-carousel" style="margin-top:48px;">
+        <img src="../images/features/satellite-imagery.webp" alt="Satellite view of agricultural fields" class="carousel-slide active" loading="lazy">
+        <img src="../images/features/iot-sensors-field.webp" alt="IoT sensor network in farmland" class="carousel-slide" loading="lazy">
+        <img src="../images/sections/drone-over-crops.webp" alt="Agricultural drone over crop rows" class="carousel-slide" loading="lazy">
+        <img src="../images/features/farmer-mobile.webp" alt="Farmer using mobile app in the field" class="carousel-slide" loading="lazy">
+        <div class="carousel-dots">
+          <button class="carousel-dot active" aria-label="Slide 1"></button>
+          <button class="carousel-dot" aria-label="Slide 2"></button>
+          <button class="carousel-dot" aria-label="Slide 3"></button>
+          <button class="carousel-dot" aria-label="Slide 4"></button>
+        </div>
+      </div>
 
       <div style="display:grid; grid-template-columns: repeat(2,1fr); gap:24px;">
         <div class="feature-detail-card fade-up" style="grid-column: 1 / -1;">
@@ -133,8 +143,9 @@
   <!-- AI ENGINE -->
   <section class="section section-alt" id="ai">
     <div class="container">
-      <!-- Unsplash search: "data visualization technology abstract blue" → ../images/features/ai-data-visualization.webp -->
-      <img src="../images/features/ai-data-visualization.webp" alt="Abstract data visualization representing AI processing" loading="lazy" class="section-img-banner" />
+      <div class="img-circle-frame img-circle-frame--xl">
+        <img src="../images/features/ai-data-visualization.webp" alt="Abstract data visualization representing AI processing" loading="lazy">
+      </div>
       <div class="grid-2">
         <div class="fade-up">
           <div class="section-label">The AI Engine</div>

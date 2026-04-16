@@ -51,13 +51,16 @@
 
   <!-- HERO PHOTO BANNER -->
   <div class="container" style="padding-top:0; padding-bottom:0;">
-    <!-- Unsplash search: "farm sunrise mist golden light rows crops" | target: images/contact/farm-sunrise.webp -->
-    <img
-      src="../images/contact/farm-sunrise.webp"
-      alt="Farm at sunrise with golden mist over crop rows"
-      class="section-img-banner"
-      loading="lazy"
-    />
+    <div class="photo-carousel">
+      <img src="../images/contact/farm-sunrise.webp" alt="Farm at sunrise with golden mist over crop rows" class="carousel-slide active" loading="lazy">
+      <img src="../images/about/sunset-field.webp" alt="Farm field at golden hour" class="carousel-slide" loading="lazy">
+      <img src="../images/pricing/hero-farm.webp" alt="Aerial view of farm fields" class="carousel-slide" loading="lazy">
+      <div class="carousel-dots">
+        <button class="carousel-dot active" aria-label="Slide 1"></button>
+        <button class="carousel-dot" aria-label="Slide 2"></button>
+        <button class="carousel-dot" aria-label="Slide 3"></button>
+      </div>
+    </div>
   </div>
 
   <!-- CONTACT SECTION -->

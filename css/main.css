@@ -637,6 +637,85 @@ p  { color: var(--text-muted); font-size: 1.0625rem; line-height: 1.75; }
   margin-bottom: 56px;
   filter: brightness(0.94) contrast(1.05) saturate(1.06);
 }
+
+/* ─── PHOTO CAROUSEL ─── */
+.photo-carousel {
+  position: relative;
+  width: calc(100% + 56px);
+  margin-left: -28px;
+  margin-right: -28px;
+  height: 380px;
+  margin-bottom: 56px;
+  overflow: hidden;
+  background: var(--green-950);
+}
+.carousel-slide {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.4s ease;
+  filter: brightness(0.93) contrast(1.05) saturate(1.07);
+}
+.carousel-slide.active { opacity: 1; }
+.carousel-dots {
+  position: absolute; bottom: 20px; left: 50%;
+  transform: translateX(-50%);
+  display: flex; gap: 8px; z-index: 10;
+}
+.carousel-dot {
+  width: 8px; height: 8px; border-radius: var(--radius-full);
+  background: rgba(255,255,255,0.35);
+  border: none; cursor: pointer; padding: 0;
+  transition: all 0.35s ease;
+}
+.carousel-dot.active { background: var(--green-400); width: 28px; }
+
+/* ─── CIRCULAR IMAGE FRAME ─── */
+.img-circle-frame {
+  position: relative; border-radius: 50%;
+  overflow: hidden; flex-shrink: 0;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.img-circle-frame img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: brightness(0.93) contrast(1.06) saturate(1.08);
+  transition: transform 0.7s ease; display: block;
+}
+.img-circle-frame:hover img { transform: scale(1.08); }
+/* dark panel variant */
+.img-circle-frame--dark {
+  width: 240px; height: 240px; margin: 0 auto 28px;
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.07), 0 0 0 10px rgba(82,168,118,0.28), var(--shadow-xl);
+}
+/* light section variant */
+.img-circle-frame--light {
+  width: 240px; height: 240px; margin: 0 auto 32px;
+  box-shadow: 0 0 0 4px var(--white), 0 0 0 9px var(--green-300), var(--shadow-xl);
+}
+/* extra-large standalone */
+.img-circle-frame--xl {
+  width: 360px; height: 360px; margin: 0 auto 48px;
+  box-shadow: 0 0 0 5px rgba(255,255,255,0.08), 0 0 0 13px rgba(82,168,118,0.25), var(--shadow-xl);
+}
+
+/* ─── STAGGERED IMAGE MOSAIC ─── */
+.img-mosaic {
+  display: flex; align-items: flex-end; justify-content: center;
+  gap: 24px; margin-bottom: 60px; padding: 24px 0 8px; flex-wrap: wrap;
+}
+.img-mosaic .img-circle-frame {
+  width: 210px; height: 210px;
+  box-shadow: 0 0 0 4px var(--white), 0 0 0 7px var(--green-200), var(--shadow-lg);
+}
+.img-mosaic .img-circle-frame:nth-child(1) { transform: rotate(-5deg) translateY(14px); }
+.img-mosaic .img-circle-frame:nth-child(2) {
+  width: 270px; height: 270px; z-index: 2;
+  transform: translateY(-14px);
+  box-shadow: 0 0 0 5px var(--white), 0 0 0 9px var(--green-300), var(--shadow-xl);
+}
+.img-mosaic .img-circle-frame:nth-child(3) { transform: rotate(5deg) translateY(14px); }
+.img-mosaic .img-circle-frame:hover { transform: translateY(-10px) scale(1.05) !important; z-index: 3; }
 .hero-photo-overlay {
   position: absolute; inset: 0; z-index: 1;
   background: url('../images/hero/farm-landscape.webp') center / cover no-repeat;

@@ -167,6 +167,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ─── PHOTO CAROUSELS ─── */
+  document.querySelectorAll('.photo-carousel').forEach(carousel => {
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const dots   = carousel.querySelectorAll('.carousel-dot');
+    if (slides.length < 2) return;
+    let current = 0;
+
+    const goTo = (i) => {
+      slides[current].classList.remove('active');
+      dots[current]?.classList.remove('active');
+      current = (i + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current]?.classList.add('active');
+    };
+
+    dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+    setInterval(() => goTo(current + 1), 4500);
+  });
+
   /* ─── SMOOTH SCROLL for anchor links ─── */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
