@@ -43,7 +43,9 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-grid-bg"></div>
-    <div class="hero-inner">
+    <!-- Unsplash search: "aerial view farm fields sunrise mediterranean" → images/hero/farm-landscape.webp -->
+    <div class="hero-photo-overlay" style="background-image:url('images/hero/farm-landscape.webp');"></div>
+    <div class="hero-inner" style="position:relative;z-index:2;">
 
       <!-- Left: Copy -->
       <div class="hero-content">
@@ -83,13 +85,18 @@
       <!-- Right: Dashboard Mockup -->
       <div class="hero-visual">
         <div class="floating-chip chip-top">
-          <div class="chip-icon" style="background:#e8f5ee;">🛰️</div>
+          <div class="chip-icon" style="background:#e8f5ee;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 7 9 3 5 7l4 4"/><path d="m17 11 4 4-4 4-4-4"/><path d="m8 12 4 4 6-6-4-4Z"/><path d="m16 8 3-3"/><path d="M9 21a6 6 0 0 0-6-6"/></svg>
+          </div>
           Satellite sync active
         </div>
 
         <div class="dashboard-card">
           <div class="dashboard-header">
-            <span class="dashboard-title">🌾 AgroFlow Dashboard</span>
+            <span class="dashboard-title" style="display:flex;align-items:center;gap:6px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-400)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22 16 8"/><path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94z"/><path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94z"/><path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94z"/><path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4z"/><path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0z"/><path d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0z"/><path d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0z"/></svg>
+              AgroFlow Dashboard
+            </span>
             <span class="dashboard-live"><span class="live-dot"></span> Live</span>
           </div>
 
@@ -115,7 +122,10 @@
           </div>
 
           <div class="dashboard-recommendation">
-            <div class="rec-label">💧 AI Recommendation</div>
+            <div class="rec-label" style="display:flex;align-items:center;gap:5px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--green-400)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+              AI Recommendation
+            </div>
             <div class="rec-text">Irrigate <strong>2.3 L/m²</strong> on Thursday morning. Rain forecast this weekend means delaying further would cause stress.</div>
             <span class="rec-savings">✓ Est. water savings vs. standard schedule: 38%</span>
           </div>
@@ -124,7 +134,9 @@
         </div>
 
         <div class="floating-chip chip-bottom">
-          <div class="chip-icon" style="background:#e0f4fd;">💧</div>
+          <div class="chip-icon" style="background:#e0f4fd;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue-500)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+          </div>
           38% less water used today
         </div>
       </div>
@@ -162,30 +174,40 @@
       <div class="section-label">The Problem</div>
       <h2>Water scarcity is agriculture's biggest threat</h2>
       <p>Agriculture consumes over 70% of the world's freshwater, yet most farmers still irrigate on fixed schedules — wasting water and reducing yields.</p>
+      <!-- Unsplash search: "drought dry cracked soil agriculture" → images/sections/water-scarcity.webp -->
+      <img src="images/sections/water-scarcity.webp" alt="Dry cracked soil in a drought-stricken field" loading="lazy" style="width:100%;border-radius:0;object-fit:cover;height:210px;margin-bottom:28px;margin-top:4px;clip-path:polygon(0 0,100% 0,100% 88%,0 100%);filter:brightness(0.9) contrast(1.05);" />
       <ul class="problem-list">
         <li class="problem-item">
-          <span class="problem-icon">💧</span>
+          <span class="problem-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+          </span>
           <div>
             <h4>Overconsumption of freshwater</h4>
             <p>Traditional irrigation wastes up to 50% of water through over-irrigation and evaporation.</p>
           </div>
         </li>
         <li class="problem-item">
-          <span class="problem-icon">📉</span>
+          <span class="problem-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"/><polyline points="16 17 22 17 22 11"/></svg>
+          </span>
           <div>
             <h4>Poor crop management</h4>
             <p>Without real-time data, farmers miss the optimal irrigation window, leading to crop stress and lower yields.</p>
           </div>
         </li>
         <li class="problem-item">
-          <span class="problem-icon">💸</span>
+          <span class="problem-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
+          </span>
           <div>
             <h4>Expensive hardware barriers</h4>
             <p>Existing smart irrigation systems require costly physical infrastructure, excluding smallholder farmers.</p>
           </div>
         </li>
         <li class="problem-item">
-          <span class="problem-icon">🐛</span>
+          <span class="problem-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 2 1.88 1.88"/><path d="M14.12 3.88 16 2"/><path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/><path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6z"/><path d="M12 20v-9"/><path d="M6.53 9C4.6 8.8 3 7.1 3 5"/><path d="M6 13H2"/><path d="M3 21c0-2.1 1.7-3.9 3.8-4"/><path d="M20.97 5c0 2.1-1.6 3.8-3.5 4"/><path d="M22 13h-4"/><path d="M17.2 17c2.1.1 3.8 1.9 3.8 4"/></svg>
+          </span>
           <div>
             <h4>Late pest detection</h4>
             <p>By the time pest damage is visible to the naked eye, up to 40% of crop yield may already be lost — costing farmers billions annually.</p>
@@ -197,30 +219,40 @@
       <div class="section-label">Our Solution</div>
       <h2>An AI layer that makes any farm smart</h2>
       <p>AgroFlow delivers precision irrigation intelligence through software alone — combining multiple data streams into a single, actionable recommendation.</p>
+      <!-- Unsplash search: "farmer tablet smartphone field crops technology" → images/sections/farmer-tablet.webp -->
+      <img src="images/sections/farmer-tablet.webp" alt="Farmer using a tablet to monitor crops in the field" loading="lazy" style="width:100%;border-radius:0;object-fit:cover;height:210px;margin-bottom:28px;margin-top:4px;clip-path:polygon(0 0,100% 0,100% 100%,0 88%);filter:brightness(0.9) contrast(1.05);" />
       <ul class="solution-list">
         <li class="solution-item">
-          <span class="problem-icon">🛰️</span>
+          <span class="problem-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 7 9 3 5 7l4 4"/><path d="m17 11 4 4-4 4-4-4"/><path d="m8 12 4 4 6-6-4-4Z"/><path d="m16 8 3-3"/><path d="M9 21a6 6 0 0 0-6-6"/></svg>
+          </span>
           <div>
             <h4>Satellite + sensor fusion</h4>
             <p>Merges satellite imagery, soil sensors, and weather APIs into a unified field intelligence model.</p>
           </div>
         </li>
         <li class="solution-item">
-          <span class="problem-icon">🤖</span>
+          <span class="problem-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+          </span>
           <div>
             <h4>AI-powered recommendations</h4>
             <p>Machine learning algorithms predict optimal irrigation timing and volume for each crop type and field.</p>
           </div>
         </li>
         <li class="solution-item">
-          <span class="problem-icon">📱</span>
+          <span class="problem-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+          </span>
           <div>
             <h4>Simple mobile experience</h4>
             <p>Farmers receive plain-language recommendations on their phones — no technical knowledge required.</p>
           </div>
         </li>
         <li class="solution-item">
-          <span class="problem-icon">🛸</span>
+          <span class="problem-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21 4 19 2c-2-2-4-2-5.5-.5L10 5 1.8 6.2a1 1 0 0 0-.7 1.5l3 4.7A1 1 0 0 0 5 13l3-.5 2 2-.5 3A1 1 0 0 0 10.8 19l4.7 3a1 1 0 0 0 1.5-.7Z"/></svg>
+          </span>
           <div>
             <h4>Drone-powered pest intelligence</h4>
             <p>AI analyzes high-resolution drone imagery to detect pest infestations days before visible damage, enabling targeted intervention that reduces pesticide use by up to 60%.</p>
@@ -238,27 +270,37 @@
         <h2 class="section-title">From sensors to action in seconds</h2>
         <p class="section-subtitle">AgroFlow's four-layer intelligence pipeline continuously monitors your fields and delivers recommendations before your crops feel any stress.</p>
       </div>
+      <!-- Unsplash search: "soil moisture sensor agriculture iot" → images/sections/sensor-in-soil.webp -->
+      <img src="images/sections/sensor-in-soil.webp" alt="IoT soil moisture sensor installed in a crop field" loading="lazy" class="section-img-banner" style="margin-top:48px;" />
 
       <div class="steps-grid">
         <div class="steps-connector"></div>
 
         <div class="step-item fade-up">
-          <div class="step-number">🌡️</div>
+          <div class="step-number">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>
+          </div>
           <h4>Sensors Collect</h4>
           <p>Soil moisture probes, weather stations, satellite imagery, and drone cameras continuously capture field conditions — from root-zone moisture to canopy pest stress — in real time.</p>
         </div>
         <div class="step-item fade-up delay-1">
-          <div class="step-number">☁️</div>
+          <div class="step-number">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+          </div>
           <h4>Data Transmits</h4>
           <p>All sensor readings are securely transmitted over the internet to AgroFlow's cloud processing platform.</p>
         </div>
         <div class="step-item fade-up delay-2">
-          <div class="step-number">🤖</div>
+          <div class="step-number">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+          </div>
           <h4>AI Analyzes</h4>
           <p>Our algorithms combine soil moisture, temperature, crop type, and weather forecasts to compute the optimal irrigation plan.</p>
         </div>
         <div class="step-item fade-up delay-3">
-          <div class="step-number">📱</div>
+          <div class="step-number">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+          </div>
           <h4>Farmer Acts</h4>
           <p>A clear, simple recommendation arrives in the mobile app: exactly when to irrigate and how much — one tap to apply.</p>
         </div>
@@ -274,14 +316,19 @@
         <h2 class="section-title">From water optimization to full crop protection</h2>
         <p class="section-subtitle">The same AI engine that manages your irrigation now detects pest threats before they spread.</p>
       </div>
+      <!-- Unsplash search: "agricultural drone crops field aerial" → images/sections/drone-over-crops.webp -->
+      <img src="images/sections/drone-over-crops.webp" alt="Agricultural drone flying over green crop rows" loading="lazy" class="section-img-banner" style="margin-top:48px;" />
 
-      <div class="grid-2" style="margin-top:60px; align-items:center; gap:48px;">
+      <div class="grid-2" style="align-items:center; gap:48px;">
 
         <!-- Field map mockup -->
         <div>
           <div class="dashboard-card">
             <div class="dashboard-header">
-              <span class="dashboard-title">🛸 Pest Detection Map</span>
+              <span class="dashboard-title" style="display:flex;align-items:center;gap:6px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-400)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21 4 19 2c-2-2-4-2-5.5-.5L10 5 1.8 6.2a1 1 0 0 0-.7 1.5l3 4.7A1 1 0 0 0 5 13l3-.5 2 2-.5 3A1 1 0 0 0 10.8 19l4.7 3a1 1 0 0 0 1.5-.7Z"/></svg>
+                Pest Detection Map
+              </span>
               <span class="dashboard-live"><span class="live-dot"></span> Live</span>
             </div>
 
@@ -317,7 +364,10 @@
             </div>
 
             <div class="dashboard-recommendation">
-              <div class="rec-label">🐛 Pest Alert</div>
+              <div class="rec-label" style="display:flex;align-items:center;gap:5px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--green-400)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 2 1.88 1.88"/><path d="M14.12 3.88 16 2"/><path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/><path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6z"/><path d="M12 20v-9"/><path d="M6.53 9C4.6 8.8 3 7.1 3 5"/><path d="M6 13H2"/><path d="M3 21c0-2.1 1.7-3.9 3.8-4"/><path d="M20.97 5c0 2.1-1.6 3.8-3.5 4"/><path d="M22 13h-4"/><path d="M17.2 17c2.1.1 3.8 1.9 3.8 4"/></svg>
+                Pest Alert
+              </div>
               <div class="rec-text">Aphid infestation detected in <strong>2 zones</strong> (NE corner). Targeted spray recommended within 48h — 94% confidence.</div>
               <span class="rec-savings">✓ Est. pesticide reduction vs. full-field spray: 58%</span>
             </div>
@@ -329,21 +379,27 @@
         <!-- Feature cards -->
         <div style="display:flex; flex-direction:column; gap:24px;">
           <div class="tech-item">
-            <span class="tech-icon">🔬</span>
+            <span class="tech-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></svg>
+            </span>
             <div>
               <h4>Early pest detection</h4>
               <p>Drone-mounted multispectral cameras identify pest stress signatures in crop canopy up to 10 days before visible damage.</p>
             </div>
           </div>
           <div class="tech-item">
-            <span class="tech-icon">🗺️</span>
+            <span class="tech-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" x2="9" y1="3" y2="18"/><line x1="15" x2="15" y1="6" y2="21"/></svg>
+            </span>
             <div>
               <h4>Targeted intervention maps</h4>
               <p>AI generates precise field maps showing exactly where to spray, reducing chemical usage and cost by up to 60%.</p>
             </div>
           </div>
           <div class="tech-item">
-            <span class="tech-icon">🔔</span>
+            <span class="tech-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+            </span>
             <div>
               <h4>Integrated alerts</h4>
               <p>Pest risk alerts arrive in the same app, alongside your irrigation recommendations — one platform for complete crop health.</p>
@@ -363,40 +419,54 @@
         <h2 class="section-title">Built for every farmer, everywhere</h2>
         <p class="section-subtitle">From large agribusinesses to smallholder farmers — AgroFlow makes precision agriculture accessible and affordable.</p>
       </div>
+      <!-- Unsplash search: "healthy green crop rows sustainable farming" → images/sections/healthy-crops.webp -->
+      <img src="images/sections/healthy-crops.webp" alt="Rows of healthy green crops under a clear sky" loading="lazy" class="section-img-banner" style="margin-top:48px;" />
 
       <div class="benefits-grid">
         <div class="benefit-card fade-up">
-          <div class="benefit-icon bg-blue-light">💧</div>
+          <div class="benefit-icon bg-blue-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--blue-500)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+          </div>
           <h3>Save Water</h3>
           <p>Precision irrigation schedules mean you only water when needed, at the right volume — eliminating waste and runoff.</p>
           <span class="benefit-stat">40% less water</span>
         </div>
         <div class="benefit-card fade-up delay-1">
-          <div class="benefit-icon bg-green-light">🌾</div>
+          <div class="benefit-icon bg-green-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22 16 8"/><path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94z"/><path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94z"/><path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94z"/><path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4z"/><path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0z"/><path d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0z"/><path d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0z"/></svg>
+          </div>
           <h3>Increase Yields</h3>
           <p>Crops irrigated at optimal moments are healthier and more productive. Avoid both drought stress and root rot from overwatering.</p>
           <span class="benefit-stat">+30% productivity</span>
         </div>
         <div class="benefit-card fade-up delay-2">
-          <div class="benefit-icon bg-amber-light">💰</div>
+          <div class="benefit-icon bg-amber-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--amber-500)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4"/><path d="m16.71 13.88.7.71-2.82 2.82"/></svg>
+          </div>
           <h3>Cut Operational Costs</h3>
           <p>Less water pumped means lower energy bills. Healthier crops mean fewer inputs. AgroFlow pays for itself within one growing season.</p>
           <span class="benefit-stat">25% cost reduction</span>
         </div>
         <div class="benefit-card fade-up delay-3">
-          <div class="benefit-icon bg-green-light">📱</div>
+          <div class="benefit-icon bg-green-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+          </div>
           <h3>Easy for Any Farmer</h3>
           <p>No agronomist or tech degree needed. A simple mobile interface delivers recommendations in plain language, in any language.</p>
           <span class="benefit-stat">2-minute setup</span>
         </div>
         <div class="benefit-card fade-up delay-4">
-          <div class="benefit-icon bg-blue-light">🛰️</div>
+          <div class="benefit-icon bg-blue-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--blue-500)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 7 9 3 5 7l4 4"/><path d="m17 11 4 4-4 4-4-4"/><path d="m8 12 4 4 6-6-4-4Z"/><path d="m16 8 3-3"/><path d="M9 21a6 6 0 0 0-6-6"/></svg>
+          </div>
           <h3>Satellite-Grade Intelligence</h3>
           <p>Access the same satellite data used by large agricultural corporations — democratized for farms of all sizes.</p>
           <span class="benefit-stat">Global coverage</span>
         </div>
         <div class="benefit-card fade-up" style="transition-delay:0.5s;">
-          <div class="benefit-icon bg-amber-light">📊</div>
+          <div class="benefit-icon bg-amber-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--amber-500)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+          </div>
           <h3>Data-Driven Insights</h3>
           <p>A rich dashboard tracks field health trends over time, helping you optimize decisions across multiple growing seasons.</p>
           <span class="benefit-stat">Season-long view</span>
@@ -417,63 +487,104 @@
       <div class="ecosystem-layers">
         <div class="ecosystem-layer fade-up">
           <div class="layer-badge">
-            <div class="layer-icon" style="background:#e0f4fd;">🌡️</div>
+            <div class="layer-icon" style="background:#e0f4fd;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-500)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>
+            </div>
             <span class="layer-name">Devices Layer</span>
           </div>
           <div class="layer-items">
-            <span class="layer-tag">🪱 Soil moisture sensors</span>
-            <span class="layer-tag">🌤️ Weather data sources</span>
-            <span class="layer-tag">🛰️ Satellite imagery</span>
+            <span class="layer-tag"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg> Soil moisture sensors</span>
+            <span class="layer-tag"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="M20 12h2"/><path d="m19.07 4.93-1.41 1.41"/><path d="M15.947 12.65a4 4 0 0 0-5.925-4.128"/><path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z"/></svg> Weather data sources</span>
+            <span class="layer-tag"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 7 9 3 5 7l4 4"/><path d="m17 11 4 4-4 4-4-4"/><path d="m8 12 4 4 6-6-4-4Z"/><path d="m16 8 3-3"/><path d="M9 21a6 6 0 0 0-6-6"/></svg> Satellite imagery</span>
           </div>
         </div>
         <div class="ecosystem-layer fade-up delay-1">
           <div class="layer-badge">
-            <div class="layer-icon" style="background:#e8f5ee;">📡</div>
+            <div class="layer-icon" style="background:#e8f5ee;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9"/><path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5"/><circle cx="12" cy="9" r="2"/><path d="M16.2 4.8c2 2 2.26 5.11.8 7.47"/><path d="M19.1 1.9a9.96 9.96 0 0 1 0 14.1"/><path d="M9.5 18h5"/><path d="m8 22 4-11 4 11"/></svg>
+            </div>
             <span class="layer-name">Connectivity Layer</span>
           </div>
           <div class="layer-items">
-            <span class="layer-tag">🔒 Secure internet transmission</span>
-            <span class="layer-tag">☁️ Cloud communication</span>
-            <span class="layer-tag">🔄 Real-time data sync</span>
+            <span class="layer-tag"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Secure internet transmission</span>
+            <span class="layer-tag"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg> Cloud communication</span>
+            <span class="layer-tag"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg> Real-time data sync</span>
           </div>
         </div>
         <div class="ecosystem-layer fade-up delay-2">
           <div class="layer-badge">
-            <div class="layer-icon" style="background:#fef3dc;">🤖</div>
-            <span class="layer-name">Data & AI Layer</span>
+            <div class="layer-icon" style="background:#fef3dc;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--amber-500)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+            </div>
+            <span class="layer-name">Data &amp; AI Layer</span>
           </div>
           <div class="layer-items">
-            <span class="layer-tag">📊 Big data processing</span>
-            <span class="layer-tag">🧠 ML irrigation algorithms</span>
-            <span class="layer-tag">🌦️ Weather forecast integration</span>
+            <span class="layer-tag"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg> Big data processing</span>
+            <span class="layer-tag"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg> ML irrigation algorithms</span>
+            <span class="layer-tag"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="M20 12h2"/><path d="m19.07 4.93-1.41 1.41"/><path d="M15.947 12.65a4 4 0 0 0-5.925-4.128"/><path d="M3 20a5 5 0 1 1 8.9-4H13a3 3 0 0 1 2 5.24"/><path d="M11 20v2"/><path d="M7 19v2"/></svg> Weather forecast integration</span>
           </div>
         </div>
         <div class="ecosystem-layer fade-up delay-3">
           <div class="layer-badge">
-            <div class="layer-icon" style="background:#e8f5ee;">📱</div>
+            <div class="layer-icon" style="background:#e8f5ee;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+            </div>
             <span class="layer-name">Application Layer</span>
           </div>
           <div class="layer-items">
-            <span class="layer-tag">📱 Mobile app for farmers</span>
-            <span class="layer-tag">📈 Insights dashboard</span>
-            <span class="layer-tag">🔔 Smart notifications</span>
+            <span class="layer-tag"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg> Mobile app for farmers</span>
+            <span class="layer-tag"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg> Insights dashboard</span>
+            <span class="layer-tag"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg> Smart notifications</span>
           </div>
         </div>
         <div class="ecosystem-layer fade-up" style="transition-delay:0.4s;">
           <div class="layer-badge">
-            <div class="layer-icon" style="background:#e0f4fd;">👨‍🌾</div>
+            <div class="layer-icon" style="background:#e0f4fd;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-500)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
+            </div>
             <span class="layer-name">User Layer</span>
           </div>
           <div class="layer-items">
-            <span class="layer-tag">👨‍🌾 Smallholder farmers</span>
-            <span class="layer-tag">🏢 Agribusinesses</span>
-            <span class="layer-tag">🌿 Agricultural advisors</span>
+            <span class="layer-tag"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 1 0-16 0"/></svg> Smallholder farmers</span>
+            <span class="layer-tag"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg> Agribusinesses</span>
+            <span class="layer-tag"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg> Agricultural advisors</span>
           </div>
         </div>
       </div>
 
       <div style="text-align:center; margin-top:48px;">
         <a href="pages/features.html" class="btn btn-outline-dark btn-lg">Explore the Full Tech Stack →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EU CAP ALIGNMENT -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label">European Alignment</div>
+        <h2 class="section-title">Built to advance Europe's agricultural future</h2>
+        <p class="section-subtitle">AgroFlow is designed in direct alignment with the EU Common Agricultural Policy (CAP) 2023–2027 and Spain's National CAP Strategic Plan — supporting the transition to sustainable, data-driven farming.</p>
+      </div>
+
+      <div class="grid-3" style="margin-top:56px;">
+        <div class="card fade-up">
+          <div class="flag-badge flag-badge-eu" aria-label="European Union">EU</div>
+          <h3>CAP 2023–2027 objectives</h3>
+          <p>AgroFlow directly contributes to the CAP's environmental and climate objectives: smart water use, reduced chemical inputs, and climate resilience — the core pillars of Europe's €387B agricultural transition.</p>
+        </div>
+        <div class="card fade-up delay-1">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg>
+          </div>
+          <h3>Eco-scheme ready</h3>
+          <p>Our precision irrigation and pest-protection outputs help farmers qualify for CAP eco-scheme payments by documenting measurable reductions in water and pesticide use.</p>
+        </div>
+        <div class="card fade-up delay-2">
+          <div class="flag-badge flag-badge-es" aria-label="Spain">ES</div>
+          <h3>Spain's strategic plan</h3>
+          <p>Tailored to Spain's CAP Strategic Plan priorities — water scarcity management in Mediterranean agriculture, pest surveillance, and digital adoption by smallholder farmers.</p>
+        </div>
       </div>
     </div>
   </section>

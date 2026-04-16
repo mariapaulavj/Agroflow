@@ -460,9 +460,10 @@ p  { color: var(--text-muted); font-size: 1.0625rem; line-height: 1.75; }
 .team-card { text-align: center; background: var(--white); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 32px 20px; transition: all var(--transition-slow); }
 .team-card:hover { border-color: var(--green-400); box-shadow: var(--shadow-md); transform: translateY(-4px); }
 .team-avatar {
-  width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 16px;
+  width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 20px;
   display: flex; align-items: center; justify-content: center;
   font-family: 'Syne','Montserrat',sans-serif; font-size: 1.6rem; font-weight: 800; color: var(--white);
+  box-shadow: 0 0 0 3px var(--white), 0 0 0 6px var(--green-300), var(--shadow-md);
 }
 .team-card h4 { font-size: 1rem; margin-bottom: 4px; }
 .team-card p { font-size: 0.82rem; margin-bottom: 0; }
@@ -581,4 +582,65 @@ p  { color: var(--text-muted); font-size: 1.0625rem; line-height: 1.75; }
   background: var(--green-100); border-radius: var(--radius-lg); color: var(--green-800);
 }
 .form-success.show { display: block; }
-.success-icon { font-size: 3rem; margin-bottom: 16px; }
+.success-icon { font-size: 3rem; margin-bottom: 16px; display: flex; justify-content: center; }
+.success-icon svg { width: 56px; height: 56px; stroke: var(--green-700); }
+
+/* 23. SVG ICON SYSTEM (Lucide inline SVG) */
+/* card-icon: large icon at top of content cards */
+.card-icon {
+  width: 48px; height: 48px; border-radius: 14px;
+  background: var(--green-100); display: flex; align-items: center;
+  justify-content: center; margin-bottom: 20px; flex-shrink: 0;
+}
+.card-icon svg { width: 26px; height: 26px; stroke: var(--green-600); }
+
+/* flag badges for EU / ES icons */
+.flag-badge {
+  width: 48px; height: 48px; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 800; color: white; letter-spacing: 0;
+  margin-bottom: 20px;
+}
+.flag-badge-eu { background: #003399; }
+.flag-badge-es { background: linear-gradient(to bottom, #c60b1e 0%, #c60b1e 30%, #f1bf00 30%, #f1bf00 70%, #c60b1e 70%); }
+
+/* problem/solution inline icons */
+.problem-icon { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+.problem-icon svg { width: 22px; height: 22px; }
+
+/* tech-stack item icons */
+.tech-icon { width: 36px; height: 36px; border-radius: 10px; background: var(--green-100);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.tech-icon svg { width: 20px; height: 20px; stroke: var(--green-600); }
+
+/* step-number circle hover icon color inversion */
+.step-item .step-number { font-size: 0; } /* hide any leftover text */
+.step-item .step-number svg { stroke: var(--green-600); width: 28px; height: 28px; }
+.step-item:hover .step-number svg { stroke: white; }
+
+/* layer-tag inline icons */
+.layer-tag svg { width: 14px; height: 14px; stroke: var(--green-600); flex-shrink: 0; }
+
+/* section image utilities */
+.section-img {
+  width: 100%; border-radius: var(--radius-xl); object-fit: cover;
+  display: block; box-shadow: var(--shadow-lg);
+}
+.section-img-banner {
+  width: calc(100% + 56px);
+  margin-left: -28px;
+  margin-right: -28px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+  margin-bottom: 56px;
+  filter: brightness(0.94) contrast(1.05) saturate(1.06);
+}
+.hero-photo-overlay {
+  position: absolute; inset: 0; z-index: 1;
+  background: url('../images/hero/farm-landscape.webp') center / cover no-repeat;
+  opacity: 0.18;
+}
+/* contact icon tiles */
+.contact-detail-icon svg { width: 22px; height: 22px; stroke: var(--green-600); }
